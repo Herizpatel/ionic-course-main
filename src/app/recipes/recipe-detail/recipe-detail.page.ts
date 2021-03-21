@@ -1,5 +1,5 @@
+import { Recipe } from './../recipe.model';
 import { Component, OnInit } from '@angular/core';
-import { Recipe } from '../recipe.model';
 import { RecipesService } from '../recipes.service';
 import { ActivatedRoute } from "@angular/router";
 @Component({
@@ -10,6 +10,7 @@ import { ActivatedRoute } from "@angular/router";
 export class RecipeDetailPage implements OnInit {
   recipe:Recipe;
   constructor( private recipeService:RecipesService, private activatedRoute:ActivatedRoute) { }
+
 
   ngOnInit() {
     //params map vs snapshot

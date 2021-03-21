@@ -1,11 +1,13 @@
 <ion-header>
+
+  
   <ion-toolbar color="primary">
 
     <ion-title>{{recipe.title}}</ion-title>
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/recipes" ></ion-back-button>
+      <ion-button href="/recipe">Delete</ion-button>
     </ion-buttons>
-
   </ion-toolbar>
 </ion-header>
 
@@ -15,7 +17,7 @@
       <ion-col class="ion-no-padding">
         <ion-item>
 
-          <ion-img [src]="recipe.imageUrl"></ion-img>
+          <ion-img [src]="recipe.imageUrl" style="max-height: 500p;"></ion-img>
 
       </ion-item>
       </ion-col>
@@ -33,7 +35,7 @@
     </ion-row>
     <ion-row>
       <ion-col>
-
+        
       </ion-col>
     </ion-row>
   </ion-grid>
